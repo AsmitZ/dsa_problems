@@ -2,6 +2,7 @@ using Xunit;
 
 namespace Algorithms.Array_Hashset;
 
+// Question link https://takeuforward.org/data-structure/set-matrix-zero/
 public class SetMatrixZero
 {
     public int[][] SetZeroes(int[][] matrix)
