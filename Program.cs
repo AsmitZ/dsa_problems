@@ -27,3 +27,8 @@ Console.WriteLine("Hello, World!");
 // RepeatingAndMissingNumber.FindUsingMaths([3, 1, 2, 5, 4, 6, 7, 5]);
 
 // RepeatingAndMissingNumber.FindUsingBitManipulation([3, 1, 2, 5, 4, 6, 7, 5]);
+
+// CountInversions.Count([5, 4, 3, 2, 1]);
+
+// var result = SearchSorted2DArray.Find([[1, 2, 4], [6, 7, 8], [9, 10, 34]], 3, 3, 78);
+// System.Console.WriteLine($"Fount the target : {result}");
