@@ -32,3 +32,11 @@ Console.WriteLine("Hello, World!");
 
 // var result = SearchSorted2DArray.Find([[1, 2, 4], [6, 7, 8], [9, 10, 34]], 3, 3, 78);
 // System.Console.WriteLine($"Fount the target : {result}");
+
+// PowXRaisedToN.Pow(2, 10);
+
+// int result = MajorElementMoreThanHalf.Find([2, 2, 2, 3, 3]);
+// System.Console.WriteLine($"Major element is {result}");
+
+// var result = MajorElementMoreThan1By3.Find([11, 33, 33, 11, 33, 11]);
+// System.Console.WriteLine($"Major element is {string.Join(", ", result)}");
