@@ -40,3 +40,7 @@ Console.WriteLine("Hello, World!");
 
 // var result = MajorElementMoreThan1By3.Find([11, 33, 33, 11, 33, 11]);
 // System.Console.WriteLine($"Major element is {string.Join(", ", result)}");
+
+// UniquePath.FindByCombination(3, 7);
+// UniquePath.FindByRescursion(3, 7);
+// UniquePath.FindByDPRecursion(3, 7);
