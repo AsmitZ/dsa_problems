@@ -2,7 +2,7 @@
 
 using Algorithms.Array_Hashset;
 
-Console.WriteLine("Hello, World!");
+// Console.WriteLine("Hello, World!");
 
 // PascalTriangle.GetPascalTriangle(5);
 
@@ -44,3 +44,6 @@ Console.WriteLine("Hello, World!");
 // UniquePath.FindByCombination(3, 7);
 // UniquePath.FindByRescursion(3, 7);
 // UniquePath.FindByDPRecursion(3, 7);
+
+var reversePairs = new ReversePairs().Find([2,4,3,5,1]);
+System.Console.WriteLine(reversePairs);
