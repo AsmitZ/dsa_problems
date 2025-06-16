@@ -1,4 +1,7 @@
-public class ThreeSum{
+namespace Algorithms.Array_Hashset;
+
+public class ThreeSum
+{
     public List<List<int>> Get(int[] nums)
     {
         if (nums.Length == 0)
