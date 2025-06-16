@@ -45,5 +45,11 @@ using Algorithms.Array_Hashset;
 // UniquePath.FindByRescursion(3, 7);
 // UniquePath.FindByDPRecursion(3, 7);
 
-var reversePairs = new ReversePairs().Find([2,4,3,5,1]);
-System.Console.WriteLine(reversePairs);
+// var reversePairs = new ReversePairs().Find([2,4,3,5,1]);
+// System.Console.WriteLine(reversePairs);
+
+var pairs = new ThreeSum().Get([-1, 0, 1, 2, -1, -4]);
+foreach (var pair in pairs)
+{
+    Console.WriteLine(string.Join(", ", pair));
+}
