@@ -48,7 +48,13 @@ using Algorithms.Array_Hashset;
 // var reversePairs = new ReversePairs().Find([2,4,3,5,1]);
 // System.Console.WriteLine(reversePairs);
 
-var pairs = new ThreeSum().Get([-1, 0, 1, 2, -1, -4]);
+// var pairs = new ThreeSum().Get([-1, 0, 1, 2, -1, -4]);
+// foreach (var pair in pairs)
+// {
+//     Console.WriteLine(string.Join(", ", pair));
+// }
+
+var pairs = FourSum.Find([-2, -1, -1, 1, 1, 2, 2], 0);
 foreach (var pair in pairs)
 {
     Console.WriteLine(string.Join(", ", pair));
