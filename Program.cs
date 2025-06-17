@@ -54,8 +54,11 @@ using Algorithms.Array_Hashset;
 //     Console.WriteLine(string.Join(", ", pair));
 // }
 
-var pairs = FourSum.Find([-2, -1, -1, 1, 1, 2, 2], 0);
-foreach (var pair in pairs)
-{
-    Console.WriteLine(string.Join(", ", pair));
-}
+// var pairs = FourSum.Find([-2, -1, -1, 1, 1, 2, 2], 0);
+// foreach (var pair in pairs)
+// {
+//     Console.WriteLine(string.Join(", ", pair));
+// }
+
+var length = LongestConsecutiveSequence.Length([100, 200, 1, 3, 4]);
+Console.WriteLine(length);
