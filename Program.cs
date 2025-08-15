@@ -60,5 +60,6 @@ using Algorithms.Array_Hashset;
 //     Console.WriteLine(string.Join(", ", pair));
 // }
 
-var length = LongestConsecutiveSequence.Length([100, 200, 1, 3, 4]);
+// var length = LongestConsecutiveSequence.Length([100, 200, 1, 3, 4]);
+var length = LongestSubArray.Length([6, -2, 2, -8, 1, 7, 4, -10]);
 Console.WriteLine(length);
