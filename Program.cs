@@ -1,6 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
 using Algorithms.Array_Hashset;
+using Algorithms.LinkedList;
 
 // Console.WriteLine("Hello, World!");
 
@@ -61,5 +62,17 @@ using Algorithms.Array_Hashset;
 // }
 
 // var length = LongestConsecutiveSequence.Length([100, 200, 1, 3, 4]);
-var length = LongestSubArray.Length([6, -2, 2, -8, 1, 7, 4, -10]);
-Console.WriteLine(length);
+// var length = LongestSubArray.Length([6, -2, 2, -8, 1, 7, 4, -10]);
+// Console.WriteLine(length);
+
+Node head = new Node(1);
+head.Next = new Node(3);
+head.Next.Next = new Node(2);
+head.Next.Next.Next = new Node(4);
+
+// ReverseLinkedList.PrintLinkedList(head);
+// var reversedList = ReverseLinkedList.Reverse(head);
+// ReverseLinkedList.PrintLinkedList(reversedList);
+
+var middle = MiddleElement.Find(head);
+ReverseLinkedList.PrintLinkedList(middle);
