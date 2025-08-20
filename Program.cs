@@ -2,6 +2,7 @@
 
 using Algorithms.Array_Hashset;
 using Algorithms.LinkedList;
+using static Algorithms.LinkedList.MergeSortedList;
 
 // Console.WriteLine("Hello, World!");
 
@@ -65,14 +66,26 @@ using Algorithms.LinkedList;
 // var length = LongestSubArray.Length([6, -2, 2, -8, 1, 7, 4, -10]);
 // Console.WriteLine(length);
 
-Node head = new Node(1);
-head.Next = new Node(3);
-head.Next.Next = new Node(2);
-head.Next.Next.Next = new Node(4);
+// Node head = new Node(1);
+// head.Next = new Node(3);
+// head.Next.Next = new Node(2);
+// head.Next.Next.Next = new Node(4);
 
 // ReverseLinkedList.PrintLinkedList(head);
 // var reversedList = ReverseLinkedList.Reverse(head);
 // ReverseLinkedList.PrintLinkedList(reversedList);
 
-var middle = MiddleElement.Find(head);
-ReverseLinkedList.PrintLinkedList(middle);
+// var middle = MiddleElement.Find(head);
+// ReverseLinkedList.PrintLinkedList(middle);
+
+ListNode list1 = new ListNode(1);
+list1.next = new ListNode(5);
+list1.next.next = new ListNode(7);
+list1.next.next.next = new ListNode(8);
+
+ListNode list2 = new ListNode(2);
+list2.next = new ListNode(4);
+list2.next.next = new ListNode(6);
+
+var mergedList = MergeSortedList.Merge(list1, list2);
+MergeSortedList.PrintLinkedList(mergedList);
