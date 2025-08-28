@@ -82,10 +82,17 @@ ListNode list1 = new ListNode(1);
 list1.next = new ListNode(5);
 list1.next.next = new ListNode(7);
 list1.next.next.next = new ListNode(8);
+list1.next.next.next.next = new ListNode(9);
 
-ListNode list2 = new ListNode(2);
-list2.next = new ListNode(4);
-list2.next.next = new ListNode(6);
+// ListNode list2 = new ListNode(2);
+// list2.next = new ListNode(4);
+// list2.next.next = new ListNode(6);
 
-var mergedList = MergeSortedList.Merge(list1, list2);
-MergeSortedList.PrintLinkedList(mergedList);
+// var mergedList = MergeSortedList.Merge(list1, list2);
+// MergeSortedList.PrintLinkedList(mergedList);
+
+// var nthNode = LinkedList.FindNthNodeFromEnd(list1, 6);
+// System.Console.WriteLine(nthNode.val);
+
+var updatedList = LinkedList.RemomveNthNodeFromEnd(list1, 1);
+MergeSortedList.PrintLinkedList(updatedList);
