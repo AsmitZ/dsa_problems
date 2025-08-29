@@ -78,11 +78,11 @@ using static Algorithms.LinkedList.MergeSortedList;
 // var middle = MiddleElement.Find(head);
 // ReverseLinkedList.PrintLinkedList(middle);
 
-ListNode list1 = new ListNode(1);
-list1.next = new ListNode(5);
-list1.next.next = new ListNode(7);
-list1.next.next.next = new ListNode(8);
-list1.next.next.next.next = new ListNode(9);
+// MergeSortedList.ListNode list1 = new MergeSortedList.ListNode(1);
+// list1.next = new MergeSortedList.ListNode(5);
+// list1.next.next = new MergeSortedList.ListNode(7);
+// list1.next.next.next = new MergeSortedList.ListNode(8);
+// list1.next.next.next.next = new MergeSortedList.ListNode(9);
 
 // ListNode list2 = new ListNode(2);
 // list2.next = new ListNode(4);
@@ -94,5 +94,16 @@ list1.next.next.next.next = new ListNode(9);
 // var nthNode = LinkedList.FindNthNodeFromEnd(list1, 6);
 // System.Console.WriteLine(nthNode.val);
 
-var updatedList = LinkedList.RemomveNthNodeFromEnd(list1, 1);
-MergeSortedList.PrintLinkedList(updatedList);
+// var updatedList = LinkedList.RemomveNthNodeFromEnd(list1, 1);
+// MergeSortedList.PrintLinkedList(updatedList);
+
+NListNode list1 = new NListNode(2);
+list1.next = new NListNode(4);
+list1.next.next = new NListNode(3);
+
+NListNode list2 = new NListNode(5);
+list2.next = new NListNode(6);
+list2.next.next = new NListNode(4);
+
+var sumList = AddNumbers.AddTwoNumbers(list1, list2);
+AddNumbers.PrintLinkedList(sumList);
