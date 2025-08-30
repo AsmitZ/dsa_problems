@@ -2,6 +2,7 @@ using static Algorithms.LinkedList.MergeSortedList;
 
 namespace Algorithms.LinkedList;
 
+// Question - https://takeuforward.org/data-structure/remove-n-th-node-from-the-end-of-a-linked-list/
 public partial class LinkedList
 {
     public static ListNode FindNthNodeFromEnd(ListNode list, int n)
