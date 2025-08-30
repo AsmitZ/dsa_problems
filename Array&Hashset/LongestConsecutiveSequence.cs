@@ -1,7 +1,6 @@
-using System.Reflection.PortableExecutable;
-
 namespace Algorithms.Array_Hashset;
 
+// Question - https://takeuforward.org/data-structure/longest-consecutive-sequence-in-an-array/
 public class LongestConsecutiveSequence
 {
     public static int Length(int[] nums)
