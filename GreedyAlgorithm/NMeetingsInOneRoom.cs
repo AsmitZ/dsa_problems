@@ -2,6 +2,7 @@ using System.Collections;
 
 namespace Algorithms.GreedyAlgorithm;
 
+// Question - https://takeuforward.org/data-structure/n-meetings-in-one-room/
 public static class NMeetingInOneRoom
 {
     public static (int, int[]) Count(int[] start, int[] end)
