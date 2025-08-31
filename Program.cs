@@ -1,6 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
 using Algorithms.Array_Hashset;
+using Algorithms.GreedyAlgorithm;
 using Algorithms.LinkedList;
 using static Algorithms.LinkedList.MergeSortedList;
 
@@ -107,3 +108,11 @@ using static Algorithms.LinkedList.MergeSortedList;
 
 // var sumList = AddNumbers.AddTwoNumbers(list1, list2);
 // AddNumbers.PrintLinkedList(sumList);
+
+int[] start = [1, 3, 0, 5, 8, 5];
+int[] end = [2, 4, 5, 7, 9, 9];
+// int[] start = [10, 12, 20];
+// int[] end = [20, 25, 30];
+
+var (count, order) = NMeetingInOneRoom.Count(start, end);
+System.Console.WriteLine($"Max Meeting - {count}, in order - {string.Join(',', order)}");
