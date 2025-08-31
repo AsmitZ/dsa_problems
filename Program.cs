@@ -97,13 +97,13 @@ using static Algorithms.LinkedList.MergeSortedList;
 // var updatedList = LinkedList.RemomveNthNodeFromEnd(list1, 1);
 // MergeSortedList.PrintLinkedList(updatedList);
 
-NListNode list1 = new NListNode(2);
-list1.next = new NListNode(4);
-list1.next.next = new NListNode(3);
+// NListNode list1 = new NListNode(2);
+// list1.next = new NListNode(4);
+// list1.next.next = new NListNode(3);
 
-NListNode list2 = new NListNode(5);
-list2.next = new NListNode(6);
-list2.next.next = new NListNode(4);
+// NListNode list2 = new NListNode(5);
+// list2.next = new NListNode(6);
+// list2.next.next = new NListNode(4);
 
-var sumList = AddNumbers.AddTwoNumbers(list1, list2);
-AddNumbers.PrintLinkedList(sumList);
+// var sumList = AddNumbers.AddTwoNumbers(list1, list2);
+// AddNumbers.PrintLinkedList(sumList);
