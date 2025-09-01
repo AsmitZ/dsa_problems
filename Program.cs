@@ -118,5 +118,8 @@ using static Algorithms.LinkedList.MergeSortedList;
 // System.Console.WriteLine($"Max Meeting - {count}, in order - {string.Join(',', order)}");
 
 // var (jobs, profit) = JobSequencing.Find(4, [(1, 4, 20), (2, 1, 10), (3, 1, 40), (4, 1, 30)]);
-var (jobs, profit) = JobSequencing.Find(5, [(1, 2, 100), (2, 1, 19), (3, 2, 27), (4, 1, 25), (5, 1, 15)]);
-System.Console.WriteLine($"Job performed - {jobs}, with profit - {profit}");
+// var (jobs, profit) = JobSequencing.Find(5, [(1, 2, 100), (2, 1, 19), (3, 2, 27), (4, 1, 25), (5, 1, 15)]);
+// System.Console.WriteLine($"Job performed - {jobs}, with profit - {profit}");
+
+var maxQuantity = FractionalKnapsack.Max(50, [100, 60, 120], [20, 10, 30]);
+System.Console.WriteLine($" max quantity is {maxQuantity}");
