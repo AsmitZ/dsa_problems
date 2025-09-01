@@ -121,5 +121,8 @@ using static Algorithms.LinkedList.MergeSortedList;
 // var (jobs, profit) = JobSequencing.Find(5, [(1, 2, 100), (2, 1, 19), (3, 2, 27), (4, 1, 25), (5, 1, 15)]);
 // System.Console.WriteLine($"Job performed - {jobs}, with profit - {profit}");
 
-var maxQuantity = FractionalKnapsack.Max(50, [100, 60, 120], [20, 10, 30]);
-System.Console.WriteLine($" max quantity is {maxQuantity}");
+// var maxQuantity = FractionalKnapsack.Max(50, [100, 60, 120], [20, 10, 30]);
+// System.Console.WriteLine($" max quantity is {maxQuantity}");
+
+var maxChilden = AssginCookiee.FindContentChildren([1, 2, 3], [1, 1]);
+System.Console.WriteLine(maxChilden);
