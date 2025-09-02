@@ -3,6 +3,7 @@
 using Algorithms.Array_Hashset;
 using Algorithms.GreedyAlgorithm;
 using Algorithms.LinkedList;
+using Algorithms.Recursion;
 using static Algorithms.LinkedList.MergeSortedList;
 
 // Console.WriteLine("Hello, World!");
@@ -124,5 +125,8 @@ using static Algorithms.LinkedList.MergeSortedList;
 // var maxQuantity = FractionalKnapsack.Max(50, [100, 60, 120], [20, 10, 30]);
 // System.Console.WriteLine($" max quantity is {maxQuantity}");
 
-var maxChilden = AssginCookiee.FindContentChildren([1, 2, 3], [1, 1]);
-System.Console.WriteLine(maxChilden);
+// var maxChilden = AssginCookiee.FindContentChildren([1, 2, 3], [1, 1]);
+// System.Console.WriteLine(maxChilden);
+
+var result = SubsetSum.Find([5, 2, 1]);
+System.Console.WriteLine(string.Join(", ", result));
