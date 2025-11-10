@@ -128,5 +128,8 @@ using static Algorithms.LinkedList.MergeSortedList;
 // var maxChilden = AssginCookiee.FindContentChildren([1, 2, 3], [1, 1]);
 // System.Console.WriteLine(maxChilden);
 
-var result = SubsetSum.Find([5, 2, 1]);
-System.Console.WriteLine(string.Join(", ", result));
+// var result = SubsetSum.Find([5, 2, 1]);
+// System.Console.WriteLine(string.Join(", ", result));
+
+// UniqueSubsets.Print([1, 2, 2]);
+UniqueSubsets.PrintOptimized([1, 2, 2]);
