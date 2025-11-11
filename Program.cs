@@ -134,8 +134,11 @@ using static Algorithms.LinkedList.MergeSortedList;
 // UniqueSubsets.Print([1, 2, 2]);
 // UniqueSubsets.PrintOptimized([1, 2, 2]);
 
-var sumList = CombinationSum1.Find([2, 3, 6, 7], 7);
-foreach (var item in sumList)
+// var sumList = CombinationSum1.Find([2, 3, 6, 7], 7);
+// var sumList = CombinationSum2.Find([10, 1, 2, 7, 6, 1, 5], 8);
+
+var palindroms = PalindromPartition.Find("aabb");
+foreach (var item in palindroms)
 {
     System.Console.Write("[");
     System.Console.Write(string.Join(",", item));
