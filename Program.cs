@@ -137,8 +137,10 @@ using static Algorithms.LinkedList.MergeSortedList;
 // var sumList = CombinationSum1.Find([2, 3, 6, 7], 7);
 // var sumList = CombinationSum2.Find([10, 1, 2, 7, 6, 1, 5], 8);
 
-var palindroms = PalindromPartition.Find("aabb");
-foreach (var item in palindroms)
+// var palindroms = PalindromPartition.Find("aabb");
+
+var permutations = ArrayPermutations.Permute_A2([1, 2, 3]);
+foreach (var item in permutations)
 {
     System.Console.Write("[");
     System.Console.Write(string.Join(",", item));
