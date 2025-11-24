@@ -139,8 +139,10 @@ using static Algorithms.LinkedList.MergeSortedList;
 
 // var palindroms = PalindromPartition.Find("aabb");
 
-var permutations = ArrayPermutations.Permute_A2([1, 2, 3]);
-foreach (var item in permutations)
+// var permutations = ArrayPermutations.Permute_A2([1, 2, 3]);
+
+var nQueenAnswer = NQueenProblem.Solve(4);
+foreach (var item in nQueenAnswer)
 {
     System.Console.Write("[");
     System.Console.Write(string.Join(",", item));
