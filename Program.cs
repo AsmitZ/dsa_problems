@@ -1,6 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
 using Algorithms.Array_Hashset;
+using Algorithms.BinarySearch;
 using Algorithms.GreedyAlgorithm;
 using Algorithms.LinkedList;
 using Algorithms.Recursion;
@@ -141,10 +142,13 @@ using static Algorithms.LinkedList.MergeSortedList;
 
 // var permutations = ArrayPermutations.Permute_A2([1, 2, 3]);
 
-var nQueenAnswer = NQueenProblem.Solve(4);
-foreach (var item in nQueenAnswer)
-{
-    System.Console.Write("[");
-    System.Console.Write(string.Join(",", item));
-    System.Console.Write("] ");
-}
+// var nQueenAnswer = NQueenProblem.Solve(4);
+// foreach (var item in nQueenAnswer)
+// {
+//     System.Console.Write("[");
+//     System.Console.Write(string.Join(",", item));
+//     System.Console.Write("] ");
+// }
+
+var nthRoot = NthRoot.Find(3, 27);
+System.Console.WriteLine(nthRoot);
