@@ -150,5 +150,14 @@ using static Algorithms.LinkedList.MergeSortedList;
 //     System.Console.Write("] ");
 // }
 
-var nthRoot = NthRoot.Find(3, 27);
-System.Console.WriteLine(nthRoot);
+// var nthRoot = NthRoot.Find(3, 27);
+// System.Console.WriteLine(nthRoot);
+
+// var singleElement = SingleElementInSortedArray.Find([1, 1, 2, 2, 3, 3, 4, 5, 5, 6, 6]);
+// System.Console.WriteLine(singleElement);
+
+// var element = ElementInSortedRotatedArray.Find([4, 5, 6, 7, 0, 1, 2], 0);
+// System.Console.WriteLine(element);
+
+var element = KthElementOfTwoSortedArray.Find([2, 3, 6, 7, 9], [1, 4, 8, 10], 5);
+System.Console.WriteLine(element);
