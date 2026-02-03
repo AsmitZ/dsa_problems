@@ -163,5 +163,13 @@ using static Algorithms.LinkedList.MergeSortedList;
 // var element = KthElementOfTwoSortedArray.Find([2, 3, 6, 7, 9], [1, 4, 8, 10], 5);
 // System.Console.WriteLine(element);
 
-var arr = KthLargestElement.Find([-5, 4, 1, 2, -3], 5);
-System.Console.WriteLine(arr);
+// var arr = KthLargestElement.Find([-5, 4, 1, 2, -3], 5);
+// System.Console.WriteLine(arr);
+
+
+var result = MergeKSortedArrays.Merge([[1, 2, 3], [2, 7, 8], [1, 4, 9]], 3);
+{
+    System.Console.Write("[");
+    System.Console.Write(string.Join(",", result));
+    System.Console.Write("] ");
+}

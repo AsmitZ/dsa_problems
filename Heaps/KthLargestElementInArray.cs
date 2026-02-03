@@ -73,7 +73,7 @@ public class MinHeap
     
     private void HeapifyDown(int index)
     {
-        while(index > size)
+        while(index < size)
         {
             var left = 2 * index + 1;
             var right = 2 * index + 2;
