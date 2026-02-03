@@ -167,9 +167,9 @@ using static Algorithms.LinkedList.MergeSortedList;
 // System.Console.WriteLine(arr);
 
 
-var result = MergeKSortedArrays.Merge([[1, 2, 3], [2, 7, 8], [1, 4, 9]], 3);
-{
-    System.Console.Write("[");
-    System.Console.Write(string.Join(",", result));
-    System.Console.Write("] ");
-}
+// var result = MergeKSortedArrays.Merge([[1, 2, 3], [2, 7, 8], [1, 4, 9]], 3);
+
+var result = KMostFrequestElement.FindByBucketSort([1, 2, 1, 2, 1, 2, 3, 1, 3, 2], 2);
+System.Console.Write("[");
+System.Console.Write(string.Join(",", result));
+System.Console.Write("] ");
