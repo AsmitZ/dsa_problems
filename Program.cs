@@ -172,8 +172,20 @@ using static Algorithms.LinkedList.MergeSortedList;
 
 // var result = KMostFrequestElement.FindByBucketSort([1, 2, 1, 2, 1, 2, 3, 1, 3, 2], 2);
 
-var result = NextGreaterElement.Find([6, 8, 0, 1, 3]);
+// var result = NextGreaterElement.Find([6, 8, 0, 1, 3]);
 
-System.Console.Write("[");
-System.Console.Write(string.Join(",", result));
-System.Console.Write("] ");
+// System.Console.Write("[");
+// System.Console.Write(string.Join(",", result));
+// System.Console.Write("] ");
+
+var stack = new Stack<int>();
+stack.Push(4);
+stack.Push(2);
+stack.Push(1);
+stack.Push(3);
+SortStack.Sort(stack);
+
+while (stack.Count > 0)
+{
+    System.Console.WriteLine(stack.Pop());
+}
