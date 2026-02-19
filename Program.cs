@@ -174,18 +174,20 @@ using static Algorithms.LinkedList.MergeSortedList;
 
 // var result = NextGreaterElement.Find([6, 8, 0, 1, 3]);
 
-// System.Console.Write("[");
-// System.Console.Write(string.Join(",", result));
-// System.Console.Write("] ");
+var result = NextSmallerelement.Find([4, 8, 5, 2, 25]);
 
-var stack = new Stack<int>();
-stack.Push(4);
-stack.Push(2);
-stack.Push(1);
-stack.Push(3);
-SortStack.Sort(stack);
+System.Console.Write("[");
+System.Console.Write(string.Join(",", result));
+System.Console.Write("] ");
 
-while (stack.Count > 0)
-{
-    System.Console.WriteLine(stack.Pop());
-}
+// var stack = new Stack<int>();
+// stack.Push(4);
+// stack.Push(2);
+// stack.Push(1);
+// stack.Push(3);
+// SortStack.Sort(stack);
+
+// while (stack.Count > 0)
+// {
+//     System.Console.WriteLine(stack.Pop());
+// }
