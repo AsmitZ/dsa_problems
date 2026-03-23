@@ -78,6 +78,7 @@ using static Algorithms.LinkedList.MergeSortedList;
 
 // ReverseLinkedList.PrintLinkedList(head);
 // var reversedList = ReverseLinkedList.Reverse(head);
+// var reversedList = ReverseLinkedList.ReverseLoop(head);
 // ReverseLinkedList.PrintLinkedList(reversedList);
 
 // var middle = MiddleElement.Find(head);
@@ -112,6 +113,18 @@ using static Algorithms.LinkedList.MergeSortedList;
 
 // var sumList = AddNumbers.AddTwoNumbers(list1, list2);
 // AddNumbers.PrintLinkedList(sumList);
+
+MergeSortedList.ListNode list = new MergeSortedList.ListNode(2);
+list.next = new MergeSortedList.ListNode(4);
+list.next.next = new MergeSortedList.ListNode(6);
+list.next.next.next = new MergeSortedList.ListNode(8);
+// list.next.next.next.next = new MergeSortedList.ListNode(4);
+// list.next.next.next.next.next = new MergeSortedList.ListNode(5);
+// list.next.next.next.next.next.next = new MergeSortedList.ListNode(6);
+
+var reorderedList = ReorderList.Do(list);
+MergeSortedList.PrintLinkedList(reorderedList);
+
 
 // int[] start = [1, 3, 0, 5, 8, 5];
 // int[] end = [2, 4, 5, 7, 9, 9];
@@ -192,5 +205,5 @@ using static Algorithms.LinkedList.MergeSortedList;
 //     System.Console.WriteLine(stack.Pop());
 // }
 
-var result = SmallestElement.Search([3, 4, 5, 6, 1, 2]);
-System.Console.WriteLine("Result is " + result);
+// var result = SmallestElement.Search([3, 4, 5, 6, 1, 2]);
+// System.Console.WriteLine("Result is " + result);

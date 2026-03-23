@@ -29,6 +29,22 @@ public class ReverseLinkedList
 
         return newHead;
     }
+
+    public static Node ReverseLoop(Node head)
+    {
+        Node? prev = null;
+        Node curr = head;
+
+        while (curr != null)
+        {
+            var nxt = curr.Next;
+            curr.Next = prev;
+            prev = curr;
+            curr = nxt;
+        }
+        
+        return prev;
+    }
 }
 
 public class Node {
