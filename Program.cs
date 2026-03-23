@@ -174,11 +174,11 @@ using static Algorithms.LinkedList.MergeSortedList;
 
 // var result = NextGreaterElement.Find([6, 8, 0, 1, 3]);
 
-var result = NextSmallerelement.Find([4, 8, 5, 2, 25]);
+// var result = NextSmallerelement.Find([4, 8, 5, 2, 25]);
 
-System.Console.Write("[");
-System.Console.Write(string.Join(",", result));
-System.Console.Write("] ");
+// System.Console.Write("[");
+// System.Console.Write(string.Join(",", result));
+// System.Console.Write("] ");
 
 // var stack = new Stack<int>();
 // stack.Push(4);
@@ -191,3 +191,6 @@ System.Console.Write("] ");
 // {
 //     System.Console.WriteLine(stack.Pop());
 // }
+
+var result = SmallestElement.Search([3, 4, 5, 6, 1, 2]);
+System.Console.WriteLine("Result is " + result);
