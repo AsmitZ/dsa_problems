@@ -26,10 +26,10 @@ public class MergeSortedList
         System.Console.WriteLine();
     }
 
-    public static ListNode Merge(ListNode list1, ListNode list2)
+    public static ListNode Merge(ListNode? list1, ListNode? list2)
     {
-        ListNode newHead = null;
-        ListNode pointer = null;
+        ListNode newHead = new(0);
+        ListNode pointer = newHead;
 
         while (list1 != null && list2 != null)
         {
@@ -45,11 +45,6 @@ public class MergeSortedList
                 list2 = list2.next;
             }
 
-            if (newHead == null)
-            {
-                newHead = newNode;
-                pointer = newNode;
-            }
             pointer.next = newNode;
             pointer = pointer.next;
         }
@@ -60,6 +55,29 @@ public class MergeSortedList
         if (list2 != null)
             pointer.next = list2;
 
-        return newHead;
+        return newHead.next;
+    }
+
+    public static ListNode? MergeKLists(ListNode[] lists)
+    {
+        if (lists.Length == 0) return null;
+        if (lists.Length == 1) return lists[0];
+
+        while(lists.Length > 1)
+        {
+            List<ListNode> mergedList = [];
+
+            for (int i = 0; i < lists.Length; i += 2)
+            {
+                var list1 = lists[i];
+                var list2 = i + 1 == lists.Length ? null : lists[i + 1];
+                var mergedNode = Merge(list1, list2);
+                mergedList.Add(mergedNode);
+            }
+
+            lists = [.. mergedList];
+        }
+
+        return lists[0];
     }
 }

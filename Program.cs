@@ -84,18 +84,23 @@ using static Algorithms.LinkedList.MergeSortedList;
 // var middle = MiddleElement.Find(head);
 // ReverseLinkedList.PrintLinkedList(middle);
 
-// MergeSortedList.ListNode list1 = new MergeSortedList.ListNode(1);
-// list1.next = new MergeSortedList.ListNode(5);
-// list1.next.next = new MergeSortedList.ListNode(7);
-// list1.next.next.next = new MergeSortedList.ListNode(8);
-// list1.next.next.next.next = new MergeSortedList.ListNode(9);
+MergeSortedList.ListNode list1 = new MergeSortedList.ListNode(1);
+list1.next = new MergeSortedList.ListNode(2);
+list1.next.next = new MergeSortedList.ListNode(4);
 
-// ListNode list2 = new ListNode(2);
-// list2.next = new ListNode(4);
-// list2.next.next = new ListNode(6);
+ListNode list2 = new ListNode(1);
+list2.next = new ListNode(3);
+list2.next.next = new ListNode(5);
 
 // var mergedList = MergeSortedList.Merge(list1, list2);
 // MergeSortedList.PrintLinkedList(mergedList);
+
+MergeSortedList.ListNode list3 = new MergeSortedList.ListNode(3);
+list1.next = new MergeSortedList.ListNode(6);
+
+var kMergedList = MergeSortedList.MergeKLists([list1, list2, list3]);
+MergeSortedList.PrintLinkedList(kMergedList);
+
 
 // var nthNode = LinkedList.FindNthNodeFromEnd(list1, 6);
 // System.Console.WriteLine(nthNode.val);
@@ -114,16 +119,16 @@ using static Algorithms.LinkedList.MergeSortedList;
 // var sumList = AddNumbers.AddTwoNumbers(list1, list2);
 // AddNumbers.PrintLinkedList(sumList);
 
-MergeSortedList.ListNode list = new MergeSortedList.ListNode(2);
-list.next = new MergeSortedList.ListNode(4);
-list.next.next = new MergeSortedList.ListNode(6);
-list.next.next.next = new MergeSortedList.ListNode(8);
+// MergeSortedList.ListNode list = new MergeSortedList.ListNode(2);
+// list.next = new MergeSortedList.ListNode(4);
+// list.next.next = new MergeSortedList.ListNode(6);
+// list.next.next.next = new MergeSortedList.ListNode(8);
 // list.next.next.next.next = new MergeSortedList.ListNode(4);
 // list.next.next.next.next.next = new MergeSortedList.ListNode(5);
 // list.next.next.next.next.next.next = new MergeSortedList.ListNode(6);
 
-var reorderedList = ReorderList.Do(list);
-MergeSortedList.PrintLinkedList(reorderedList);
+// var reorderedList = ReorderList.Do(list);
+// MergeSortedList.PrintLinkedList(reorderedList);
 
 
 // int[] start = [1, 3, 0, 5, 8, 5];
